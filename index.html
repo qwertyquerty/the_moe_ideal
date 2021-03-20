@@ -1,0 +1,167 @@
+<head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+		:root {
+			--moe-white: #ffffff;
+			--moe-transparent-white: #ffffff33;
+			--moe-pink: #ff7abf;
+			--moe-blue: #7abfff;
+		}
+
+		::-webkit-scrollbar {
+			width: 0px;
+		}
+
+		body {
+			background-color: var(--moe-pink);
+			color: var(--moe-white);
+			font-family: 'Fredoka One';
+			margin: 0px;
+		}
+
+		.scroll-indicator {
+			animation: bounce 1s ease infinite;
+			bottom: 5rem;
+			color: var(--moe-white);
+			font-size: 50px;
+			height: 4rem;
+			left: 50vw;
+			letter-spacing: -1px;
+			margin-left: -3rem;
+			position: absolute;
+			text-align: center;
+		}
+		
+		@keyframes bounce {
+			50% {
+				transform: translateY(-25%);
+			}
+		}
+
+		.text-color-blue {
+			color: var(--moe-blue);
+		}
+
+		.text-title {
+			font-size: 160px;
+			text-shadow: -7px -7px var(--moe-transparent-white);
+			user-select: none;
+		}
+
+		.text-subtitle {
+			font-size: 57px;
+			text-shadow: -3px -3px var(--moe-transparent-white);
+			user-select: none;
+		}
+
+		.text-section-header {
+			font-size: 100px;
+			text-shadow: -4px -4px var(--moe-transparent-white);
+		}
+
+		.image-shadow {
+			filter: drop-shadow(-60px -0px 0 var(--moe-transparent-white));
+		}
+
+		.bg-blue {
+			background-color: var(--moe-blue);
+		}
+
+		.subliminal-symbol {
+			font-size: 60px;
+			text-align: center;
+		}
+
+	</style>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"></script>
+
+	<script>
+		window.onload = function() {
+			AOS.init();
+		}
+
+		$(window).scroll(function() {
+			$(".scroll-indicator").css("opacity", 1 - $(window).scrollTop() / 200);
+		});
+	</script>
+</head>
+
+<body>
+
+	<div class="scroll-indicator">╲╱</div>
+
+	<div style="display: flex; padding: 0px 150px; padding-top: 200px;">
+		<div style="display: flex-item; flex-grow: 3;">
+			<div class="text-title" data-aos="fade-up">The Moe Ideal</div>
+			<div class="text-subtitle" data-aos="fade" data-aos-delay="500" data-aos-duration="500">Our plan for world peace and happiness</div>
+		</div>
+		<div style="display: flex-item; flex-grow: 1;">
+			<img class="image-shadow" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700" src="img/salute.png">
+		</div>
+	</div>
+
+	<div class="bg-blue" style="display: flex; padding: 0px 150px; padding-top: 100px; box-shadow: 0px -16px var(--moe-transparent-white);">
+		<div style="display: flex-item; flex-grow: 1;">
+			<img class="image-shadow" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700" data-aos-anchor=".section-2-aos-anchor" src="img/peace.png">
+		</div>
+		<div style="display: flex-item; flex-grow: 3;">
+			<div class="text-section-header" data-aos="fade-up" data-aos-anchor=".section-2-aos-anchor">Reforming the World</div>
+			<div class="text-subtitle section-2-aos-anchor" data-aos="fade" data-aos-delay="300" data-aos-duration="500">Making change one step at a time</div>
+		</div>
+	</div>
+
+	<div style="display: flex; padding: 0px 150px; padding-top: 100px; box-shadow: 0px -16px var(--moe-transparent-white);">
+		<div style="display: flex-item; flex-grow: 3;">
+			<div class="text-section-header" data-aos="fade-up" data-aos-anchor=".section-3-aos-anchor">Our Beliefs and Truths</div>
+			<div class="text-subtitle section-3-aos-anchor" data-aos="fade" data-aos-delay="300" data-aos-duration="500">The underlying basis of our ideology</div>
+			<br>
+			<div style="display: flex;">
+				<div style="display: flex-item;" data-aos="fade" data-aos-delay="300" data-aos-anchor=".section-3-aos-anchor">
+					<img src="img/chibi_cry.png">
+					<br>
+					<div class="subliminal-symbol">✖</div>
+				</div>
+				
+				<div style="display: flex-item; width: 50px;"></div> <!-- splitter -->
+
+				<div style="display: flex-item;" data-aos="fade" data-aos-delay="300" data-aos-anchor=".section-3-aos-anchor">
+					<img src="img/chibi_smile.png">
+					<br>
+					<div class="subliminal-symbol">✔</div>
+				</div>
+			</div>
+		</div>
+		<div style="display: flex-item; flex-grow: 1;">
+			<img class="image-shadow" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700" data-aos-anchor=".section-3-aos-anchor" src="img/pray.png">
+		</div>
+	</div>
+
+
+	<div class="bg-blue" style="display: flex; padding: 0px 150px; padding-top: 100px; box-shadow: 0px -16px var(--moe-transparent-white);">
+		<div style="display: flex-item; flex-grow: 1;">
+			<img class="image-shadow" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700" data-aos-anchor=".section-4-aos-anchor" src="img/phone.png">
+		</div>
+
+		<div style="display: flex-item; flex-grow: 3;">
+			<div class="text-section-header" data-aos="fade-up" data-aos-anchor=".section-4-aos-anchor">Contact Us</div>
+			<div class="text-subtitle section-4-aos-anchor" data-aos="fade" data-aos-delay="300" data-aos-duration="500"></div>
+		</div>
+	</div>
+
+	<div style="display: flex; padding: 0px 150px; padding-top: 100px; box-shadow: 0px -16px var(--moe-transparent-white);">
+		<div style="display: flex-item; flex-grow: 6;">
+			<div class="text-section-header" data-aos="fade-up" data-aos-anchor=".section-5-aos-anchor">Get Involved</div>
+			<div class="text-subtitle section-5-aos-anchor" data-aos="fade" data-aos-delay="300" data-aos-duration="500">Find out how you can help our cause</div>
+		</div>
+
+		<div style="display: flex-item; flex-grow: 1;">
+			<img class="image-shadow" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700" data-aos-anchor=".section-5-aos-anchor" src="img/point.png">
+		</div>
+	</div>
+</body>
