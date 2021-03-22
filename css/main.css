@@ -26,7 +26,7 @@ img {
 	animation: bounce 1s ease infinite;
 	bottom: 5rem;
 	color: var(--moe-white);
-	font-size: 50px;
+	font-size: 2.60vw;
 	height: 4rem;
 	left: 50vw;
 	letter-spacing: -1px;
@@ -47,25 +47,26 @@ img {
 }
 
 .text-title {
-	font-size: 160px;
-	text-shadow: -7px -7px var(--moe-transparent-white);
+	font-size: 8.33vw;
+	text-shadow: -0.365vw -0.365vw var(--moe-transparent-white);
 	user-select: none;
 }
 
 .text-subtitle {
-	font-size: 57px;
-	text-shadow: -3px -3px var(--moe-transparent-white);
+	font-size: 2.97vw;
+	text-shadow: -0.156vw -0.156vw var(--moe-transparent-white);
 	user-select: none;
 }
 
 .text-section-header {
-	font-size: 100px;
-	text-shadow: -4px -4px var(--moe-transparent-white);
+	font-size: 5.21vw;
+	text-shadow: -0.208vw -0.208vw var(--moe-transparent-white);
 	user-select: none;
 }
 
 .image-shadow {
-	filter: drop-shadow(-60px -0px 0 var(--moe-transparent-white));
+	filter: drop-shadow(-3.13vw -0px 0 var(--moe-transparent-white));
+	width: 26.7vw;
 }
 
 .bg-blue {
@@ -73,11 +74,15 @@ img {
 }
 
 .subliminal-symbol {
-	font-size: 60px;
+	font-size: 3.13vw;
 	text-align: center;
 }
 
+.pillar-image {
+	width: 9.11vw;
+}
+
 .pillar-caption {
-	font-size: 30px;
+	font-size: 1.56vw;
 	text-align: center;
 }
