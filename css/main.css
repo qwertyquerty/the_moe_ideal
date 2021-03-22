@@ -89,6 +89,11 @@ img {
 
 .pillar-image {
 	width: 9.11vw;
+	height: 9.64vw;
+}
+
+.pillar-image img {
+	width: 100%;
 }
 
 .pillar-caption {
