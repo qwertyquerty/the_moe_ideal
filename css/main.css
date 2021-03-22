@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root {
+	--moe-white: #ffffff;
+	--moe-transparent-white: #ffffff33;
+	--moe-pink: #ff7abf;
+	--moe-blue: #7abfff;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+body {
+	background-color: var(--moe-pink);
+	color: var(--moe-white);
+	font-family: 'Fredoka One';
+	margin: 0px;
+}
+
+img {
+	user-select: none;
+}
+
+.scroll-indicator {
+	animation: bounce 1s ease infinite;
+	bottom: 5rem;
+	color: var(--moe-white);
+	font-size: 50px;
+	height: 4rem;
+	left: 50vw;
+	letter-spacing: -1px;
+	margin-left: -3rem;
+	position: absolute;
+	text-align: center;
+	user-select: none;
+}
+
+@keyframes bounce {
+	50% {
+		transform: translateY(-25%);
+	}
+}
+
+.text-color-blue {
+	color: var(--moe-blue);
+}
+
+.text-title {
+	font-size: 160px;
+	text-shadow: -7px -7px var(--moe-transparent-white);
+	user-select: none;
+}
+
+.text-subtitle {
+	font-size: 57px;
+	text-shadow: -3px -3px var(--moe-transparent-white);
+	user-select: none;
+}
+
+.text-section-header {
+	font-size: 100px;
+	text-shadow: -4px -4px var(--moe-transparent-white);
+	user-select: none;
+}
+
+.image-shadow {
+	filter: drop-shadow(-60px -0px 0 var(--moe-transparent-white));
+}
+
+.bg-blue {
+	background-color: var(--moe-blue);
+}
+
+.subliminal-symbol {
+	font-size: 60px;
+	text-align: center;
+}
+
+.pillar-caption {
+	font-size: 30px;
+	text-align: center;
+}
