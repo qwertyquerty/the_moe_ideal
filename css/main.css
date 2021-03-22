@@ -17,6 +17,7 @@ html, body {
 	font-family: 'Fredoka One';
 	margin: 0px;
 	padding: 0px;
+	overscroll-behavior-y: none;
 }
 
 .section {
